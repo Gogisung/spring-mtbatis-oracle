@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.MyBatis.dao.LoginDao">
+    <select id="selectListEnterpriseMember" parameterType="com.example.MyBatis.vo.EnterpriseMemberVo" resultType="com.example.MyBatis.vo.EnterpriseMemberVo">
+        <![CDATA[
+            SELECT ENTRPRS_MBER_ID as entrprsMberId, ENTRPRS_SE_CODE as entrprsSeCode FROM COMTNENTRPRSNBER
+        ]]>
+    </select>
+</mapper>
+
+
+
+<!--        select ENTRPRS_MBER_ID as entrprsMberId, ENTRPRS_SE_CODE as entrprsSeCode, BIZRNO as bizrno, JURIRNO as jurirno, CMPNY_NM as cmpnyNm, ZIP as zip, ADRES as adres-->
+<!--        from comtnentrprsnber-->
